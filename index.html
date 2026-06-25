@@ -6,12 +6,12 @@
 <title>Anugu Veda Portfolio</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -36,35 +36,40 @@ margin-bottom:20px;
 }
 
 h1{
-font-size:40px;
+font-size:42px;
+margin-bottom:10px;
 }
 
 .subtitle{
-font-size:18px;
 color:#cbd5e1;
-margin-top:10px;
+font-size:18px;
+margin-bottom:20px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 25px;
-margin:10px;
+padding:12px 22px;
+margin:8px;
 background:#38bdf8;
 color:black;
+font-weight:bold;
 text-decoration:none;
 border-radius:8px;
-font-weight:bold;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 section{
-padding:50px 10%;
+padding:60px 10%;
 }
 
 .section-title{
 text-align:center;
 font-size:32px;
-margin-bottom:30px;
 color:#38bdf8;
+margin-bottom:30px;
 }
 
 .cards{
@@ -79,39 +84,53 @@ background:#1e293b;
 padding:20px;
 border-radius:12px;
 width:300px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
 margin-bottom:10px;
+color:#38bdf8;
 }
 
-ul{
-padding-left:20px;
+.skills .card{
+width:180px;
+text-align:center;
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
 text-align:center;
-padding:30px;
+padding:25px;
 background:#1e293b;
 }
 
 @media(max-width:768px){
 
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.card{
-width:90%;
+.profile{
+width:140px;
+height:140px;
 }
 
 h1{
-font-size:30px;
+font-size:32px;
+}
+
+.card{
+width:100%;
+}
+
+.skills .card{
+width:100%;
 }
 
 }
-
 </style>
 </head>
 
@@ -119,7 +138,7 @@ font-size:30px;
 
 <header>
 
-<img src="profile.jpg.jpeg" class="profile">
+<img src="profile.jpg.jpeg" alt="Anugu Veda" class="profile">
 
 <h1>Anugu Veda</h1>
 
@@ -127,51 +146,42 @@ font-size:30px;
 ECE Student | Python Developer | Aspiring Software Engineer
 </p>
 
-<a href="Anugu_Veda_Resume.pdf" class="btn" target="_blank">
-Download Resume
+<a href="Anugu_Veda_Resume.pdf" target="_blank" class="btn">
+Resume
 </a>
 
-<a href="https://github.com/Anugu-veda" class="btn" target="_blank">
+<a href="https://github.com/Anugu-veda" target="_blank" class="btn">
 GitHub
 </a>
 
-<a href="https://www.linkedin.com/in/veda-reddy-71b08034a" class="btn" target="_blank">
+<a href="https://www.linkedin.com/in/veda-reddy-71b08034a" target="_blank" class="btn">
 LinkedIn
 </a>
 
 </header>
 
 <section>
-
 <h2 class="section-title">About Me</h2>
 
-<p style="text-align:center;">
-I am Anugu Veda, a B.Tech ECE student at Malla Reddy College of Engineering for Women.
-Passionate about Python Development, Web Development, Data Analytics and building real-world projects.
-I continuously learn new technologies and enjoy solving problems through software.
+<p style="text-align:center; max-width:900px; margin:auto;">
+I am Anugu Veda, a B.Tech Electronics and Communication Engineering student at Malla Reddy College of Engineering for Women. Passionate about Python Development, Data Analytics, Web Development and building impactful software solutions. I enjoy learning new technologies and solving real-world problems through innovative projects.
 </p>
-
 </section>
 
 <section>
-
 <h2 class="section-title">Education</h2>
 
 <div class="cards">
-
 <div class="card">
 <h3>B.Tech - ECE</h3>
-<p>Malla Reddy College of Engineering for Women</p>
-<p>Graduation: 2027</p>
-<p>CGPA: 7.37</p>
+<p><strong>College:</strong> Malla Reddy College of Engineering for Women</p>
+<p><strong>Graduation:</strong> 2027</p>
+<p><strong>CGPA:</strong> 7.37</p>
 </div>
-
 </div>
-
 </section>
 
-<section>
-
+<section class="skills">
 <h2 class="section-title">Skills</h2>
 
 <div class="cards">
@@ -183,90 +193,82 @@ I continuously learn new technologies and enjoy solving problems through softwar
 <div class="card">Java (Learning)</div>
 <div class="card">DSA Basics</div>
 <div class="card">Verilog</div>
-<div class="card">GitHub</div>
 <div class="card">DBMS</div>
+<div class="card">GitHub</div>
 <div class="card">Communication Skills</div>
 <div class="card">CapCut</div>
 <div class="card">Video Editing</div>
 
 </div>
-
 </section>
 
 <section>
-
 <h2 class="section-title">Projects</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Twitter Sentiment Analysis</h3>
-<p>Analyzed user sentiments from tweets using Python and NLP techniques.</p>
+<p>Performed sentiment analysis on tweets using Python and NLP techniques to classify opinions and trends.</p>
 </div>
 
 <div class="card">
 <h3>Video Streaming Platform</h3>
-<p>Developed a streaming platform UI with modern web technologies.</p>
+<p>Developed a responsive video streaming platform interface using web technologies.</p>
 </div>
 
 <div class="card">
 <h3>Fraud Detection System</h3>
-<p>Built a system to identify suspicious transactions using data analysis.</p>
+<p>Built a system to detect suspicious activities and fraudulent transactions using data analysis concepts.</p>
 </div>
 
 <div class="card">
 <h3>Verilog Vending Machine Using FSM</h3>
-<p>Implemented vending machine logic using Finite State Machine concepts.</p>
+<p>Designed a vending machine controller using Verilog HDL and Finite State Machine concepts.</p>
 </div>
 
 <div class="card">
 <h3>ArogyaLink Healthcare App</h3>
-<p>Healthcare platform connecting patients and healthcare services.</p>
+<p>Healthcare application connecting patients with healthcare services and medical information.</p>
 </div>
 
 </div>
-
 </section>
 
 <section>
-
 <h2 class="section-title">Certifications</h2>
 
-<div class="card" style="width:100%;">
+<div class="cards">
 
-<ul>
-<li>Deloitte Data Analytics Job Simulation</li>
-<li>Deloitte Cyber Job Simulation</li>
-<li>Tata GenAI Virtual Experience Program</li>
-<li>NPTEL – Enhancing Soft Skills and Personality</li>
-<li>YBI Foundation Python Programming Internship</li>
-<li>Infosys Data Science Certification</li>
-<li>Infosys Natural Language Processing Certification</li>
-<li>Infosys Artificial Intelligence Certification</li>
-<li>FreeCodeCamp Certifications</li>
-</ul>
+<div class="card">Deloitte Data Analytics Job Simulation</div>
+<div class="card">Deloitte Cyber Job Simulation</div>
+<div class="card">Tata GenAI Virtual Experience Program</div>
+<div class="card">NPTEL – Enhancing Soft Skills and Personality</div>
+<div class="card">YBI Foundation Python Programming Internship</div>
+<div class="card">Infosys Data Science Certification</div>
+<div class="card">Infosys NLP Certification</div>
+<div class="card">Infosys Artificial Intelligence Certification</div>
+<div class="card">FreeCodeCamp Certifications</div>
 
 </div>
-
 </section>
 
-<section>
-
+<section class="contact">
 <h2 class="section-title">Contact</h2>
 
-<div class="card" style="width:100%; text-align:center;">
+<p><strong>Email:</strong> vedareddyanugu@gmail.com</p>
+<p><strong>Phone:</strong> 9014041704</p>
 
-<p>Email: vedareddyanugu@gmail.com</p>
-<p>Phone: 9014041704</p>
+<br>
 
-</div>
+<a href="mailto:vedareddyanugu@gmail.com" class="btn">
+Email Me
+</a>
 
 </section>
 
 <footer>
-
-<p>© 2026 Anugu Veda | Portfolio Website</p>
-
+<p>© 2026 Anugu Veda | All Rights Reserved</p>
 </footer>
 
 </body>
