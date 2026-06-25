@@ -37,7 +37,7 @@ color:#38bdf8;
 }
 .hero{
 text-align:center;
-padding:80px 20px;
+padding:120px 20px;
 }
 .hero img{
 width:180px;
@@ -94,7 +94,10 @@ border-radius:14px;
 border:1px solid #1f2937;
 }
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(56,189,248,0.4);
+transition:0.3s;
+}
 }
 .skills{
 display:flex;
@@ -124,6 +127,27 @@ font-size:34px;
 width:140px;
 height:140px;
 }
+  .bg-animation{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 25%),
+radial-gradient(circle at 80% 40%, rgba(59,130,246,0.15), transparent 25%),
+radial-gradient(circle at 50% 80%, rgba(14,165,233,0.15), transparent 25%);
+z-index:-1;
+animation:moveBg 10s infinite alternate;
+}
+  .glow{
+text-shadow:0 0 20px #38bdf8;
+}
+
+@keyframes moveBg{
+from{transform:translateY(0);}
+to{transform:translateY(-30px);}
+}
 }
 </style>
 </head>
@@ -135,10 +159,11 @@ height:140px;
 <a href="#projects">Projects</a>
 <a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
+<div class="bg-animation"></div>
 </nav>
 <section class="hero">
 <img src="profile.jpeg" alt="Anugu Veda">
-<h1>Anugu Veda</h1>
+<h1 class="glow">Anugu Veda</h1>
 <p>
 ECE Student • Python Developer • Aspiring Software Engineer
 </p>
@@ -221,13 +246,35 @@ I am Anugu Veda, a B.Tech Electronics and Communication Engineering student at M
 <div class="card">FreeCodeCamp Certifications</div>
 </div>
 </section>
+ <section>
+<h2 class="section-title">Highlights</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>5+</h3>
+<p>Projects Built</p>
+</div>
+
+<div class="card">
+<h3>9+</h3>
+<p>Certifications</p>
+</div>
+
+<div class="card">
+<h3>2027</h3>
+<p>Graduation Year</p>
+</div>
+
+</div>
+</section>
 <section id="contact" class="contact">
 <h2 class="section-title">Contact</h2>
 <p>Email: vedareddyanugu@gmail.com</p>
 <p>Phone: 9014041704</p>
 </section>
 <footer>
-<p>© 2026 Anugu Veda. All Rights Reserved.</p>
+<p>Built with ❤️ by Anugu Veda</p>
 </footer>
 </body>
 </html>
