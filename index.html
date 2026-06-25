@@ -1,90 +1,273 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anugu Veda Portfolio</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anugu Veda Portfolio</title>
 
-    header {
-      padding: 50px;
-      background: #1e293b;
-    }
+<style>
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-    section {
-      padding: 40px;
-    }
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
 
-    .card {
-      background: #1e293b;
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 250px;
-    }
+header{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(135deg,#1e293b,#0f172a);
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+margin-bottom:20px;
+}
+
+h1{
+font-size:40px;
+}
+
+.subtitle{
+font-size:18px;
+color:#cbd5e1;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:50px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+width:300px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+ul{
+padding-left:20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#1e293b;
+}
+
+@media(max-width:768px){
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+h1{
+font-size:30px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Anugu Veda</h1>
-  <p>ECE Student | Python Developer | Fresher</p>
+
+<img src="profile.jpg.jpeg" class="profile">
+
+<h1>Anugu Veda</h1>
+
+<p class="subtitle">
+ECE Student | Python Developer | Aspiring Software Engineer
+</p>
+
+<a href="Anugu_Veda_Resume.pdf" class="btn" target="_blank">
+Download Resume
+</a>
+
+<a href="https://github.com/Anugu-veda" class="btn" target="_blank">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/veda-reddy-71b08034a" class="btn" target="_blank">
+LinkedIn
+</a>
+
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>I am an ECE student passionate about Python, Web Development, and building real-world projects.</p>
+
+<h2 class="section-title">About Me</h2>
+
+<p style="text-align:center;">
+I am Anugu Veda, a B.Tech ECE student at Malla Reddy College of Engineering for Women.
+Passionate about Python Development, Web Development, Data Analytics and building real-world projects.
+I continuously learn new technologies and enjoy solving problems through software.
+</p>
+
 </section>
 
 <section>
-  <h2>Skills</h2>
 
-  <div class="card">Python</div>
-  <div class="card">HTML</div>
-  <div class="card">CSS</div>
-  <div class="card">SQL</div>
-  <div class="card">Java (Learning)</div>
-  <div class="card">DSA Basics</div>
-  <div class="card">Communication</div>
-  <div class="card">Video Editing (CapCut)</div>
+<h2 class="section-title">Education</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>B.Tech - ECE</h3>
+<p>Malla Reddy College of Engineering for Women</p>
+<p>Graduation: 2027</p>
+<p>CGPA: 7.37</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-  <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Sentiment Analysis</h3>
-    <p>Twitter sentiment analysis using Python</p>
-  </div>
+<h2 class="section-title">Skills</h2>
 
-  <div class="card">
-    <h3>Video Streaming Platform</h3>
-    <p>Basic streaming website UI project</p>
-  </div>
+<div class="cards">
+
+<div class="card">Python</div>
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">SQL</div>
+<div class="card">Java (Learning)</div>
+<div class="card">DSA Basics</div>
+<div class="card">Verilog</div>
+<div class="card">GitHub</div>
+<div class="card">DBMS</div>
+<div class="card">Communication Skills</div>
+<div class="card">CapCut</div>
+<div class="card">Video Editing</div>
+
+</div>
+
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:vedareddyanugu@gmail.com">vedareddyanugu@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/">My GitHub</a></p>
+
+<h2 class="section-title">Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Twitter Sentiment Analysis</h3>
+<p>Analyzed user sentiments from tweets using Python and NLP techniques.</p>
+</div>
+
+<div class="card">
+<h3>Video Streaming Platform</h3>
+<p>Developed a streaming platform UI with modern web technologies.</p>
+</div>
+
+<div class="card">
+<h3>Fraud Detection System</h3>
+<p>Built a system to identify suspicious transactions using data analysis.</p>
+</div>
+
+<div class="card">
+<h3>Verilog Vending Machine Using FSM</h3>
+<p>Implemented vending machine logic using Finite State Machine concepts.</p>
+</div>
+
+<div class="card">
+<h3>ArogyaLink Healthcare App</h3>
+<p>Healthcare platform connecting patients and healthcare services.</p>
+</div>
+
+</div>
+
 </section>
+
+<section>
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="card" style="width:100%;">
+
+<ul>
+<li>Deloitte Data Analytics Job Simulation</li>
+<li>Deloitte Cyber Job Simulation</li>
+<li>Tata GenAI Virtual Experience Program</li>
+<li>NPTEL – Enhancing Soft Skills and Personality</li>
+<li>YBI Foundation Python Programming Internship</li>
+<li>Infosys Data Science Certification</li>
+<li>Infosys Natural Language Processing Certification</li>
+<li>Infosys Artificial Intelligence Certification</li>
+<li>FreeCodeCamp Certifications</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card" style="width:100%; text-align:center;">
+
+<p>Email: vedareddyanugu@gmail.com</p>
+<p>Phone: 9014041704</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Anugu Veda | Portfolio Website</p>
+
+</footer>
 
 </body>
 </html>
